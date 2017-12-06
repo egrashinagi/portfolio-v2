@@ -1,50 +1,67 @@
-/*верстка без флексов*/
+body, html {
+    display: flex;
+    flex-direction: column;
 
-html,body {
-    height: 100%;
-}
+    min-width: 450px;
 
-body {
-    background: radial-gradient(#e8f3f5,#4f7a83);
+    background-color: #7da6ac;
+    background-image: url("../images/fon_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
 
     font-family: "PT Sans", Roboto, Arial, sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
-
-    min-width: 650px;
 }
 
-.menu__item {
-    float: left;
-    vertical-align: middle;
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding: 15px 5px;
+}
 
-    padding: 10px 10px;
-    margin: 5px 10px;
-    text-decoration: none;
+.header__menu {
+    display: flex;
 
-    color: #3b300b;
+    background-color: rgba(190, 190, 190, 0.45);
+    color: #272727;
+
+    padding: 20px;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    box-shadow: -1px -2px 32px 6px rgba(0,0,0,0.75);
+}
+
+.header__menu a:hover {
+    font-size: 1.3em;
+    color: #f1ffdc;
+    /*transition: top 1s ease-out 0.5s;*/
+    width: 100px;
+}
+
+.header__menu-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+
     background-color: #7d81a4;
-    background: linear-gradient(45deg, #8492b1, #646d83);
-    border-radius: 3px;
-    box-shadow: -1px -2px 32px 6px rgba(132, 132, 132, 0.66);
+    border-radius: 5px;
 }
 
-.menu__phon {
-    float: right;
-    vertical-align: middle;
-
-    padding: 10px;
+.header__menu-link {
+    text-decoration: none;
+    color: #f1ffdc;
 }
 
-.header__titles {
-    color: #3b300b;
-    clear: both;
-
-    text-align: center;
-
-    padding: 10px;
+.header__phone {
+    display: flex;
+    flex-shrink: 0;
+    padding: 5px;
 }
 
 .main {
@@ -61,16 +78,19 @@ body {
 }
 
 .main__about {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .main__about-story {
-
+    display: flex;
+    justify-content: space-around;
 
 }
 
 .main__about-story-foto {
-    float: left;
+    display: flex;
+    align-items: center;
     padding: 20px 10px;
 }
 
@@ -80,10 +100,6 @@ body {
 }
 
 .main__about-text {
-    float: right;
-    text-align: center;
-    vertical-align: middle;
-
     color: #3b300b;
     padding: 10px;
 }
@@ -94,7 +110,8 @@ h1, h2 {
 }
 
 .main__works {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .main__works-title {
@@ -112,6 +129,9 @@ h1, h2 {
 }
 
 .feed {
+    display: flex;
+    flex-direction: column;
+
     background-color: rgba(190, 190, 190, 0.45);
     color: #272727;
 
@@ -130,6 +150,9 @@ h1, h2 {
 }
 
 .contacts {
+    display: flex;
+    flex-direction: column;
+
     background-color: rgba(190, 190, 190, 0.45);
     color: #272727;
 
@@ -148,6 +171,9 @@ h1, h2 {
 }
 
 .events {
+    display: flex;
+    flex-direction: column;
+
     background-color: rgba(190, 190, 190, 0.45);
     color: #272727;
 
@@ -165,8 +191,11 @@ h1, h2 {
     width: 70%;
 }
 
+
+
 .contacts__karts {
-    position: relative;
+    display: flex;
+
     width: 400px;
     height: 250px;
 
@@ -175,7 +204,8 @@ h1, h2 {
 }
 
 .footer {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-copy-link, .up-link {
@@ -183,57 +213,3 @@ h1, h2 {
     color: #595c75;
 }
 
-
-
-
-.menu {
-    text-align: center;
-}
-
-.menu__item {
-    display: inline-block;
-}
-
-h1 {
-    color: #3A262F;
-    font-weight:normal;
-    text-align: center;
-}
-
-.link {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-}
-
-.menu:hover .link {
-    -webkit-transform: scale(2);
-    transform: scale(2);
-}
-
-.menu a:hover {
-    font-size: 1.3em;
-    color: #dcdcdc;
-    width: 100px;
-}
-.menu__item-link {
-    transition: 0.5s;
-    text-decoration: none;
-    color: #f5e6db;
-}
-
-.menu__item1 {
-    transition: 0.5s;
-    text-decoration: none;
-    color: #f5e6db;
-}
-.menu__item2 {
-    transition:0.5s;
-    text-decoration: none;
-    color: #f5e6db;
-}
-.menu__item3 {
-    transition: 0.5s;
-    text-decoration: none;
-    color: #f5e6db;
-}
