@@ -2,18 +2,18 @@
 
 html,body {
     height: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 body {
-    background: radial-gradient(#e8f3f5,#4f7a83);
+    background: radial-gradient(#e8f3f5, #4f7a83);
     color: white;
 
     font-family: "PT Sans", Roboto, Arial, sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
-
-    min-width: 650px;
 }
 
 .menu__item {
@@ -71,7 +71,11 @@ body {
 
 .main__about-story-foto {
     float: left;
-    padding: 20px 10px;
+    padding: 30px 20px 0 0 ;
+}
+
+.main__about-story-foto-image {
+    border-radius: 50%;
 }
 
 .main__about-title {
@@ -81,11 +85,11 @@ body {
 
 .main__about-text {
     float: right;
-    text-align: center;
     vertical-align: middle;
 
     color: #3b300b;
     padding: 10px;
+    clear: both;
 }
 
 h1, h2 {
@@ -93,13 +97,13 @@ h1, h2 {
     color: #41370a;
 }
 
-.main__works {
-
+.main__works-title-link {
+    text-decoration: none;
+    color: white;
 }
 
 .main__works-title {
     color: #767676;
-    text-align: center  ;
 }
 
 .main__about-line {
@@ -174,13 +178,10 @@ h1, h2 {
     border: 1px solid rgba(170, 170, 170, 0.6);
 }
 
-.footer {
-
-}
-
 .footer-copy-link, .up-link {
     text-decoration: none;
     color: #595c75;
+    padding-bottom: 10px;
 }
 
 
@@ -204,6 +205,7 @@ h1 {
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    color: white;
 }
 
 .menu:hover .link {
