@@ -239,3 +239,44 @@ h1 {
     text-decoration: none;
     color: #f5e6db;
 }
+
+/*----mobile version----*/
+
+@media screen and (max-width: 768px){
+    .menu__phon {
+        display: inline;
+        float: none;
+        padding: 10px;
+        text-align: center;
+        clear: both;
+    }
+
+    .contacts__karts {
+        height: 150px;
+        width: auto;
+    }
+
+    .menu__item {
+       margin-bottom: 20px;
+    }
+
+    .menu {
+        display: inline;
+        float: none;
+        text-align: center;
+    }
+
+    .footer-copy {
+        display: none;
+    }
+
+    .up {
+        display: none;
+    }
+
+    .main__about-story-foto {
+        text-align: center;
+        float: none;
+    }
+
+}
